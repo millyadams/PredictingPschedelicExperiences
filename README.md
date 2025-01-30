@@ -25,5 +25,11 @@ Multiple pipelines are run and are differentiated by:
 2. Type of EEG Power - we wanted to compare models built using both relative and absolute power
 
 ### Steps 
-<img width="586" alt="Screenshot 2025-01-30 at 21 26 07" src="https://github.com/user-attachments/assets/af2549b1-b3f5-46ce-ab5a-a65399703775" />
+Because we aimed to identify the optimal classifier to use to solve this problem, we compared performance of 7 classifiers. The below figure outlines pipeline stages. 
+![Screenshot 2024-11-04 at 14 19 17](https://github.com/user-attachments/assets/9bc15cbc-0e0e-4c24-affd-9c92eb0633a2)
+1. Train/Test Split
+2. Dimensionality reduction of the feature space using recursive feature elimination with cross-validation (RFECV) to create model-specific optimal feature sets
+3. Hyperparameter tuning using random search
+4. Test each model on unseen data (note - each model has a personalised feature set and optimised hyperparameteres)
+5. Feature Importance analysis using SHapely Additive exPlanations analysis (SHAP) 
 
