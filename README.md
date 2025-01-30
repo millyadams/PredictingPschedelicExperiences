@@ -26,6 +26,7 @@ Multiple pipelines are run and are differentiated by:
 
 ### Steps 
 Because we aimed to identify the optimal classifier to use to solve this problem, we compared performance of 7 classifiers. The below figure outlines pipeline stages. 
+
 ![Screenshot 2024-11-04 at 14 19 17](https://github.com/user-attachments/assets/9bc15cbc-0e0e-4c24-affd-9c92eb0633a2)
 1. Train/Test Split
 2. Dimensionality reduction of the feature space using recursive feature elimination with cross-validation (RFECV) to create model-specific optimal feature sets
