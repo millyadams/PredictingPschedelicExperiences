@@ -17,6 +17,13 @@ EEG features are extracted from resting-state EEG recordings collected immediate
 ### Subjective Experience Data 
 Three experience classifications are used as binary outcome labels: Mystical, Visual and Anxious. 
 
-## Preparation 
-
 ## Pipeline 
+Dataframe: matrix containing binary experience labels (3) and EEG features (448) for 50 participants, in the case of our data. 
+
+Multiple pipelines are run and are differentiated by: 
+1. Type of experience - predicting binary labels for Mystical, Visual and Anxious experiences separately
+2. Type of EEG Power - we wanted to compare models built using both relative and absolute power
+
+### Steps 
+<img width="586" alt="Screenshot 2025-01-30 at 21 26 07" src="https://github.com/user-attachments/assets/af2549b1-b3f5-46ce-ab5a-a65399703775" />
+
