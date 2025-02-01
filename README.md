@@ -9,6 +9,8 @@ To run this code, you will need the following dependencies in your environment:
 - pandas 2.0.3
 - numpy 1.24.3
 
+Ensure you have the project functions downloaded in your filepath. 
+
 ## Datasets 
 The pipeline uses EEG and subjective experience data from 50 healthy control (HC) participants across three studies collected by the Centre for Pyschedelic Research at Imperial College London: [Timmerman et al., 2019](https://www.nature.com/articles/s41598-019-51974-4), [Timmerman et al., 2023](https://www.pnas.org/doi/10.1073/pnas.2218949120), [Luan et al., 2024](https://journals.sagepub.com/doi/10.1177/02698811231196877). 
 
