@@ -2,7 +2,6 @@
 
 #functions for project 
 
-
 import numpy as np 
 import pandas as pd 
 
@@ -139,16 +138,7 @@ def shap_analysis(model, X_train, X_test, name, feature_names, savedir):
         
     name = name.replace('_', ' ')
 
-    #select SHAP explainer based on type od model 
-    #if isinstance(model,(RandomForestClassifier, GradientBoostingClassifier, XGBClassifier)):
-        #explainer = shap.TreeExplainer(model) #different explainers for different model types 
-    #else: 
-        #explainer = shap.KernelExplainer(model.predict, X_train)
-        
-    #shap_values = explainer.shap_values(X_test) #calculate shap values for test data using explainer 
-    #on test dataset reflects performance and feature importance on unseen data 
-    
-        # select SHAP explainer based on the type of model
+    # select SHAP explainer based on the type of model
     if isinstance(model, (RandomForestClassifier, GradientBoostingClassifier, XGBClassifier)):
         if isinstance(model, XGBClassifier):
             # Check if XGBoost uses 'gbtree' booster
